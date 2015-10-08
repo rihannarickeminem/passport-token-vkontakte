@@ -1,0 +1,8 @@
+{
+  "name": "passport-token-vkontakte",
+  "version": "1.0.0",
+  "repository": "yakimun/passport-token-vkontakte",
+  "dependencies": {
+    "passport-vkontakte": "^0.4.0"
+  }
+}
