@@ -4,9 +4,6 @@ var VkontakteStrategy = require('passport-vkontakte').Strategy;
 
 class Strategy extends VkontakteStrategy {
     constructor(options, verify) {
-        options.clientID = 1;
-        options.clientSecret = 'secret';
-
         super(options, verify);
 
         this.name = 'token-vkontakte';
@@ -38,4 +35,5 @@ class Strategy extends VkontakteStrategy {
     }
 }
 
-module.exports = Strategy;
+exports = module.exports = Strategy;
+exports.Strategy = Strategy;
