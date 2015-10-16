@@ -13,6 +13,8 @@ class Strategy extends VkontakteStrategy {
         const self = this;
 
         this._loadUserProfile(req.query.access_token, function (err, profile) {
+            if (err) return self.fail();
+
             function verified(err, user, info) {
                 if (err) return self.error(err);
                 if (!user) return self.fail(info);
