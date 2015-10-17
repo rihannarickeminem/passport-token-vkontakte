@@ -1,6 +1,7 @@
 {
   "name": "passport-token-vkontakte",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "description": "VK authentication strategy for Passport.",
   "repository": "yakimun/passport-token-vkontakte",
   "dependencies": {
     "passport-vkontakte": "^0.4.0"
